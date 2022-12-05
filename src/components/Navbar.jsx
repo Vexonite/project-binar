@@ -11,15 +11,15 @@ function OffcanvasExample() {
       <Navbar key={"sm"} bg="light" expand={"sm"} className="pb-0 ">
         <Container fluid style={{ backgroundColor: "#f1f3ff" }}>
           <Container>
-            <Navbar.Brand href="/">
-              <img src={Logo} alt="Logo" className="d-inline-block align-text-top" />
-            </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${"sm"}`} />
             <Navbar.Offcanvas id={`offcanvasNavbar-expand-${"sm"}`} aria-labelledby={`offcanvasNavbarLabel-expand-${"sm"}`} placement="end">
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${"sm"}`}>Offcanvas</Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
+                <Navbar.Brand href="/">
+                  <img src={Logo} alt="Logo" className="d-inline-block align-text-top" />
+                </Navbar.Brand>
                 <Nav className="justify-content-end flex-grow-1 pe-3" style={{ fontWeight: "600" }}>
                   <Nav.Link href="#ourService">Our Services</Nav.Link>
                   <Nav.Link href="#whyUs">Why Us</Nav.Link>
