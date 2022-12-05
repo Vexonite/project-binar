@@ -1,10 +1,11 @@
 import * as React from "react";
+import Nav from "react-bootstrap/Nav";
 import FB from "../assets/img/FB.png";
 import IG from "../assets/img/IG.png";
 import TW from "../assets/img/TW.png";
 import MAIL from "../assets/img/MAIL.png";
 import TC from "../assets/img/TC.png";
-import Nav from "react-bootstrap/Nav";
+import Logo from "../assets/img/logo.png";
 
 const Footer = () => {
   return (
@@ -46,7 +47,9 @@ const Footer = () => {
             <p className="footer">
               Copyright Binar 2022 <br />
               <br />
-              <img src="img/logo.png" alt="" />
+              <a href="/">
+                <img src={Logo} alt="" />
+              </a>
             </p>
           </div>
         </div>
