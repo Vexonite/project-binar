@@ -7,12 +7,12 @@ import Logo from "../assets/img/logo.png";
 
 function OffcanvasExample() {
   return (
-    <div className="container-fluid p-0">
-      <header class="bg-primary bg-opacity-10">
-        <Navbar key={"sm"} bg="light" expand={"sm"} className="pb-0 ">
-          <Container fluid style={{ paddingLeft: "255px", paddingRight: "255px", backgroundColor: "#f1f3ff" }}>
+    <header className="bg-primary bg-opacity-10">
+      <Navbar key={"sm"} bg="light" expand={"sm"} className="pb-0 ">
+        <Container fluid style={{ backgroundColor: "#f1f3ff" }}>
+          <Container>
             <Navbar.Brand href="/">
-              <img src={Logo} alt="Logo" class="d-inline-block align-text-top" />
+              <img src={Logo} alt="Logo" className="d-inline-block align-text-top" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${"sm"}`} />
             <Navbar.Offcanvas id={`offcanvasNavbar-expand-${"sm"}`} aria-labelledby={`offcanvasNavbarLabel-expand-${"sm"}`} placement="end">
@@ -29,9 +29,9 @@ function OffcanvasExample() {
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
-        </Navbar>
-      </header>
-    </div>
+        </Container>
+      </Navbar>
+    </header>
   );
 }
 

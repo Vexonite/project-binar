@@ -1,11 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Filter = (props) => {
   return (
-    <div
-      className="card position-relative top-100 start-50 translate-middle mt-1"
-      style={{ width: "1000px" }}
-    >
+    <div className="card position-relative top-100 start-50 translate-middle mt-1" style={{ width: "1000px" }}>
       <div className="card-body">
         <p className="card-title">
           <b>Pencarianmu</b>
@@ -17,14 +14,7 @@ const Filter = (props) => {
                 <label htmlFor="namaMobil" className="form-label">
                   Nama Mobil
                 </label>
-                <input
-                  disabled={props.disabled}
-                  onChange={props.handleChangeName}
-                  type="text"
-                  placeholder="Ketik Nama/tipe mobil"
-                  className="form-control"
-                  id="namaMobil"
-                />
+                <input disabled={props.disabled} onChange={props.handleChangeName} type="text" placeholder="Ketik Nama/tipe mobil" className="form-control" id="namaMobil" />
               </div>
             </div>
             <div className="col-3">
@@ -43,9 +33,9 @@ const Filter = (props) => {
                   inputProps={{ "aria-label": "Without label" }}
                 >
                   <option selected>Masukkan Kapasitas Mobil</option>
-                  <option value="2-4 Orang">2-4 Orang</option>
-                  <option value="4-6 Orang">4-6 Orang</option>
-                  <option value="6-8 Orang">6-8 Orang</option>
+                  <option value="small">2-4 Orang</option>
+                  <option value="medium">4-6 Orang</option>
+                  <option value="large">6-8 Orang</option>
                 </select>
               </div>
             </div>
@@ -65,9 +55,9 @@ const Filter = (props) => {
                   inputProps={{ "aria-label": "Without label" }}
                 >
                   <option selected>Masukkan Harg a Sewa per Hari</option>
-                  <option value="< 400.000">&lt; Rp.400.000</option>
-                  <option value="400.000 - 600.000">Rp.400.000 - Rp.600.000</option>
-                  <option value="> 600.000">&gt; Rp.600.000</option>
+                  <option value="cheap">&lt; Rp.400.000</option>
+                  <option value="medium">Rp.400.000 - Rp.600.000</option>
+                  <option value="expensive">&gt; Rp.600.000</option>
                 </select>
               </div>
             </div>
@@ -87,8 +77,8 @@ const Filter = (props) => {
                   inputProps={{ "aria-label": "Without label" }}
                 >
                   <option selected>Status Mobil</option>
-                  <option value="Disewa">Disewa</option>
-                  <option value="Belum Disewa">Belum Disewa</option>
+                  <option value="FALSE">Disewa</option>
+                  <option value="TRUE">Belum Disewa</option>
                 </select>
               </div>
             </div>
