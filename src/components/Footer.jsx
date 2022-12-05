@@ -4,6 +4,7 @@ import IG from "../assets/img/IG.png";
 import TW from "../assets/img/TW.png";
 import MAIL from "../assets/img/MAIL.png";
 import TC from "../assets/img/TC.png";
+import Nav from "react-bootstrap/Nav";
 
 const Footer = () => {
   return (
@@ -21,15 +22,14 @@ const Footer = () => {
             </p>
           </div>
           <div className="col-lg-3">
-            <p className="footer">
-              Our Services <br />
-              <br />
-              Why Us <br />
-              <br />
-              Testimonial <br />
-              <br />
-              FAQ
-            </p>
+            <Nav.Link href="#ourService">Our Services</Nav.Link>
+            <br />
+            <Nav.Link href="#whyUs">Why Us</Nav.Link>
+            <br />
+            <Nav.Link href="#testimony">Testimonial</Nav.Link>
+            <br />
+            <Nav.Link href="#question">FAQ</Nav.Link>
+            <br />
           </div>
           <div className="col-lg-3" style={{ fontWeight: 700 }}>
             <p className="footer">
