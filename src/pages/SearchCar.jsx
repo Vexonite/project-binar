@@ -84,7 +84,7 @@ const SearchCar = () => {
                           <br />
                           <h6 className="car-name">{item.name}</h6>
                           <h5 className="car-price">
-                            <b>{item.price}/ hari</b>
+                            <b>Rp. {item.price}/ hari</b>
                           </h5>
                           <h6 style={{ fontWeight: 600 }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
                           <Link to={`/detailmobil/${item.id}`}>

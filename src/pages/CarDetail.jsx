@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Filter from "../components/Filter";
 import "./pages.css";
-import { Container } from "react-bootstrap";
 
 const CarDetail = () => {
   const { id } = useParams();
@@ -77,7 +76,7 @@ const CarDetail = () => {
                   {car.category === "medium" && "4 - 6 Orang"}
                   {car.category === "large" && "6 - 8 Orang"}
                 </p>
-                <h5>Total {car.price}</h5>
+                <h5>Total Rp. {car.price}</h5>
               </div>
             </div>
           </div>
