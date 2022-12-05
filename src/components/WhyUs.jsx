@@ -7,7 +7,7 @@ import Medal from "../assets/img/medal.png";
 const WhyUs = () => {
   return (
     <section id="whyUs">
-      <div className="container">
+      <div className="container mt-5">
         <h1 className="fs-2">Why Us</h1>
         <p className="fs-6">Mengapa harus pilih Binar Car Rental?</p>
       </div>

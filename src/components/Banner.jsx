@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <section id="sewa">
-      <div className="container sewa">
+      <div className="container sewa mt-5">
         <div className="card text-center">
           <div className="card-body">
             <h2 className="card-title">Sewa Mobil di (Lokasimu) Sekarang!</h2>

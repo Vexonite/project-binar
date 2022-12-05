@@ -9,8 +9,8 @@ function OffcanvasExample() {
   return (
     <div className="container-fluid p-0">
       <header class="bg-primary bg-opacity-10">
-        <Navbar key={"sm"} bg="light" expand={"sm"} className="pb-0">
-          <Container fluid style={{ paddingLeft: "255px", paddingRight: "240px", backgroundColor: "#f1f3ff" }}>
+        <Navbar key={"sm"} bg="light" expand={"sm"} className="pb-0 ">
+          <Container fluid style={{ paddingLeft: "255px", paddingRight: "255px", backgroundColor: "#f1f3ff" }}>
             <Navbar.Brand href="/">
               <img src={Logo} alt="Logo" class="d-inline-block align-text-top" />
             </Navbar.Brand>
