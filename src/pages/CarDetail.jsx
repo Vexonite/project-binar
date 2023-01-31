@@ -7,6 +7,7 @@ import Filter from "../components/Filter";
 import "./pages.css";
 import user from "../assets/img/user.png";
 import Container from "react-bootstrap/Container";
+import { Link } from "react-router-dom";
 
 const CarDetail = () => {
   const { id } = useParams();
@@ -81,7 +82,14 @@ const CarDetail = () => {
                     {car.category === "medium" && "4 - 6 Orang"}
                     {car.category === "large" && "6 - 8 Orang"}
                   </p>
-                  <h5>Total Rp. &nbsp;&nbsp;&nbsp;&nbsp; {car.price}</h5>
+                  <p>Tentukan lama sewa Mobil (Max. 7 Hari)</p>
+
+                  <h5 style={{ marginBottom: "30px", marginTop: "100px" }}>Total Rp. &nbsp;&nbsp;&nbsp;&nbsp; {car.price}</h5>
+                  <button type="button" className="btn btn-payment" style={{ width: "490px", backgroundColor: "#5cb85f", borderRadius: "2px" }}>
+                    <Link to="/bayarmobil" style={{ textDecoration: "none", color: "#fff" }}>
+                      Lanjutkan Pembayaran
+                    </Link>
+                  </button>
                 </div>
               </div>
             </div>
