@@ -6,8 +6,12 @@ import BestCar from "../components/BestCar";
 import WhyUs from "../components/WhyUs";
 import Testimonial from "../components/Testimonial";
 import Banner from "../components/Banner";
+import { useEffect } from "react";
 
 const HomePage = () => {
+  useEffect(() => {
+    document.title = "Welcome to Binar Rental Car";
+  }, []);
   return (
     <div>
       <Navbar />

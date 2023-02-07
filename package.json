@@ -12,6 +12,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.1.7",
+    "antd-button-color": "^1.0.4",
     "axios": "^1.2.0",
     "bootstrap": "^5.2.3",
     "js-cookie": "^3.0.1",

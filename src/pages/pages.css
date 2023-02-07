@@ -13,3 +13,263 @@
   text-decoration: none;
   width: 100%;
 }
+
+.btn-signin {
+  margin-top: 4px;
+  text-decoration: none;
+  border-color: #5cb85f;
+  background-color: #5cb85f;
+  transition-duration: 0.3s;
+  color: #fff;
+}
+
+.btn-signin:hover {
+  background-color: #6bcf6f;
+  color: #fff;
+}
+
+.btn-register {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-register:hover {
+  color: #fff;
+}
+
+.signin {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  height: 100vh;
+}
+.signin-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.signin-content {
+  width: 52%;
+}
+.signin-form h3 {
+  margin-bottom: 32px;
+  margin-top: 32px;
+  font-weight: 700;
+}
+.signin-form form {
+  display: grid;
+}
+.signin-form form input {
+  margin-top: 9px;
+  margin-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: -webkit-fill-available;
+}
+.signin-form form button {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  background-color: #0d28a6;
+  border-radius: 2px;
+}
+.signin-content p {
+  text-align: center;
+}
+.signin-content p a {
+  font-weight: 700;
+  color: #0d28a6;
+  text-decoration: underline;
+}
+.signin-pic {
+  width: 50%;
+  background: #0d28a6;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  flex-direction: column;
+}
+.signin-pic h1 {
+  color: white;
+  opacity: 0.7;
+  font-weight: 500;
+  margin: 112px auto 49px auto;
+  font-size: 48px;
+}
+.signin-pic img {
+  width: 605px;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    margin: 0;
+    margin-bottom: 0;
+  }
+  .navig {
+    width: 50% !important;
+  }
+  .container1-header {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .article1 {
+    margin: 0 16px;
+  }
+  .imgcar {
+    margin-top: 24px;
+  }
+  .imgcar img {
+    margin-left: 16px;
+    width: 96%;
+  }
+  .container1-header h1 {
+    margin-top: 0;
+  }
+  .container1-header p {
+    margin-top: 0;
+  }
+  .container1-header button {
+    margin-bottom: 0;
+  }
+
+  .container2-service {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: auto;
+  }
+  .imgservice {
+    margin-right: 0;
+  }
+  .imgservice img {
+    width: 74%;
+    margin: 60px 54px 24px 54px;
+  }
+  .article2 {
+    margin: 16px;
+    width: auto;
+  }
+  .serv-li li {
+    line-height: 20px;
+  }
+
+  .container3-whyus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 16px 60px 16px;
+  }
+  .article3 {
+    text-align: center;
+  }
+  .card-1 {
+    flex-direction: column;
+  }
+  .card1a {
+    width: auto;
+    height: 196px;
+    margin-bottom: 20px;
+  }
+  .card1a {
+    width: fit-content;
+  }
+
+  .card-content {
+    width: 328px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 32px;
+  }
+  .card2text {
+    margin: 0;
+  }
+  .card2text svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 24px;
+  }
+
+  .contain-card-3 {
+    margin: 60px 16px 40px;
+  }
+  .card3 {
+    width: 328px;
+    height: auto;
+  }
+  .article-card-3 {
+    margin: 64px 58px 64px;
+  }
+  .article-card-3 p {
+    margin: auto;
+  }
+  .article-card-3 button {
+    margin-top: 32px;
+  }
+
+  .card {
+    display: flex;
+    /* justify-content: space-between; */
+  }
+
+  .container5-faq {
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-top: 40px;
+  }
+  .article5 {
+    text-align: center;
+    /* width: 328px; */
+    margin: 0;
+    width: auto;
+  }
+  .faq {
+    width: auto;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+  .address,
+  .features2,
+  .socmed,
+  .copyright {
+    margin: 0;
+  }
+  .features2 {
+    margin-left: -16px;
+  }
+  .copyright {
+    margin-top: 16px;
+  }
+
+  .first-col {
+    margin-top: 29px;
+  }
+  .signin-content {
+    width: 328px;
+  }
+  .second-col {
+    display: none;
+  }
+  .signin-logo {
+    flex-direction: row;
+    display: flex !important;
+    justify-content: space-between;
+  }
+  .signin-logo svg:nth-child(2) {
+    display: flex !important;
+  }
+}
