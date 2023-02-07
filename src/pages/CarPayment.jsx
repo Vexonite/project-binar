@@ -40,6 +40,36 @@ const CarPayment = () => {
                 <br />
                 <h5>Pilih Bank Transfer</h5>
                 <p>Kamu bisa membayar dengan transfer melalui ATM, Internet Banking atau Mobile Banking</p>
+                <div class="card">
+                  <div class="card-body">
+                    <button type="button" className="btn btn-PayA" style={{ backgroundColor: "#5cb85f", borderRadius: "3px" }}>
+                      <Link to="/PayA" style={{ textDecoration: "none", color: "#fff" }}>
+                        BCA
+                      </Link>
+                    </button>
+                    &nbsp; BCA Transfer
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <button type="button" className="btn btn-PayA" style={{ backgroundColor: "#5cb85f", borderRadius: "3px" }}>
+                      <Link to="/PayA" style={{ textDecoration: "none", color: "#fff" }}>
+                        BNI
+                      </Link>
+                    </button>
+                    &nbsp; BNI Transfer
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <button type="button" className="btn btn-PayA" style={{ backgroundColor: "#5cb85f", borderRadius: "3px" }}>
+                      <Link to="/PayA" style={{ textDecoration: "none", color: "#fff" }}>
+                        Mandiri
+                      </Link>
+                    </button>
+                    &nbsp; Mandiri Transfer
+                  </div>
+                </div>
               </div>
             </div>
           </div>
